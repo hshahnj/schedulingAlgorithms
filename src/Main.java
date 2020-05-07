@@ -85,6 +85,7 @@ public class Main {
         for (String algoName : listOfAlgorithms) {
             if (algoName.toUpperCase().equals("ALL")) {
                 algorithms.addAll(Scheduler.getAlgoToClassMap().values());
+                break;
             } else {
                 if (Scheduler.getAlgoToClassMap().containsKey(algoName.toUpperCase())) {
                     algorithms.add(Scheduler.getAlgoToClassMap().get(algoName.toUpperCase()));
